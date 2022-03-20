@@ -11,31 +11,31 @@
 }
 
 *::after,*::before,*{
-    margin : 0rem;
-    padding : 0rem;
+    margin : 0;
+    padding : 0;
     box-sizing : border-box;
-}
-
-html,body{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--light-grayish-blue);
+    display: grid;
+    place-items: center;
     height : 100vh;
-    display: flex;
-    align-items: center;
 }
 
+.inner-review{
+    max-width : 95%;
+    margin : 0 auto;
+}
 
 .review-section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.5rem;
-    /* max-width : 90%; */
-    /* margin : 0 auto; */
+    max-width : 90%;
+    margin : 0 auto;
+    line-height: 1.35rem;
 }
 
 .review{
@@ -81,44 +81,53 @@ body{
 
 .review .profile-content{
     display: flex;
+    align-items: center;
 }
 
 img{
     border-radius : 50px;
     height : 30px;
     width : 30px;
-    /* margin : .75rem; */
-}
-
-.intro{
-    /* font-size: .75rem; */
+    margin : .75rem;
 }
 
 .intro p:first-child{
     color : var(--light-grayish-blue);
-    /* word-spacing: .1rem; */
+    word-spacing: .1rem;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .intro p:last-child{
     color : var(--light-gray);
-    /* font-size : .65rem; */
+    font-size : .7rem;
 }
 
 .para-1{
     color : var(--white);
-     /* font-size : 1.05rem;  */
+    font-size : 1.05rem; 
+    padding : .5rem;
+}
+
+.review-3 .para-1, .review-4 .para-1{
+    color : var(--very-dark-blackish-blue);
+}
+
+.review-3 .para-2, .review-4 .para-2{
+    color : var(--very-dark-grayish-blue);
+}
+
+.review-3 .intro p:first-child, .review-4 .intro p:first-child{
+    color : var(--very-dark-blackish-blue);
+    font-weight: 600;
+}
+
+.review-3 .intro p:last-child, .review-4 .intro p:last-child{
+    color : var(--very-dark-grayish-blue);
 }
 
 .para-2{
     color : var(--light-gray);
-    /* font-size : .85rem; */
-}
-
-.attribution {    
-    font-size: 13px;
-    text-align: center; 
-}
-
-.attribution a{
-    color : var(--attr-color);
+    font-size : .85rem;
+    padding : .65rem .5rem;
 }
