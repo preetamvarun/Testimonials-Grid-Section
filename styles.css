@@ -28,18 +28,7 @@ body{
 
 
 .review-section{
-    
-}
-
-.review{
-    display: flex;
-    flex-direction: column;
-}
-
-.review .profile-content{
-    display: flex;
-    align-items: center;
-    color : var(--light-grayish-blue);
+    display: grid;
 }
 
 .review-1{
@@ -52,6 +41,7 @@ body{
 
 .review-3{
     background-color: var(--white);
+    /* grid-column: 3/ span 1; */
 }
 
 .review-4{
@@ -60,6 +50,18 @@ body{
 
 .review-5{
     background-color: var(--very-dark-blackish-blue);
+    /* grid-column : 2/span 2; */
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review .profile-content{
+    display: flex;
+    align-items: center;
+    color : var(--light-grayish-blue);
 }
 
 .para-1{
