@@ -23,6 +23,55 @@ html,body{
 
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--light-grayish-blue);
+}
+
+
+.review-section{
+    
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review .profile-content{
+    display: flex;
+    align-items: center;
+    color : var(--light-grayish-blue);
+}
+
+.review-1{
+    background-color: var(--Moderate-violet);
+}
+
+.review-2{
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.review-3{
+    background-color: var(--white);
+}
+
+.review-4{
+    background-color: var(--white);
+}
+
+.review-5{
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.para-1{
+    color : var(--white);
+}
+
+.para-2{
+    color : var(--light-gray);
+}
+
+img{
+    border-radius : 50px;
 }
 
 .attribution {    
