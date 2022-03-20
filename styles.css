@@ -26,13 +26,13 @@ body{
 
 .inner-review{
     max-width : 95%;
-    margin : 0 auto;
+    margin : auto;
 }
 
 .review-section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 1.2rem;
     max-width : 90%;
     margin : 0 auto;
     line-height: 1.35rem;
@@ -46,6 +46,19 @@ body{
     background-color: var(--Moderate-violet);
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
+}
+
+.quote{
+    position: absolute;
+    right : 20px;
+    top : 0px;
+}
+
+.quote img{
+    height : 70%;
+    width : 70%;
+    position: relative;
 }
 
 .review-2{
@@ -107,6 +120,8 @@ img{
     color : var(--white);
     font-size : 1.05rem; 
     padding : .5rem;
+    position: relative;
+    z-index: 2;
 }
 
 .review-3 .para-1, .review-4 .para-1{
