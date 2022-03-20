@@ -34,8 +34,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.5rem;
-    max-width : 90%;
-    margin : 0 auto;
+    /* max-width : 90%; */
+    /* margin : 0 auto; */
 }
 
 .review{
@@ -46,7 +46,6 @@ body{
     background-color: var(--Moderate-violet);
     grid-column-start: 1;
     grid-column-end: 3;
-    /* opacity: 0; */
 }
 
 .review-2{
@@ -78,12 +77,10 @@ body{
 .review{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .review .profile-content{
     display: flex;
-    align-items: center;
 }
 
 img{
@@ -94,29 +91,27 @@ img{
 }
 
 .intro{
-    font-size: .75rem;
+    /* font-size: .75rem; */
 }
 
 .intro p:first-child{
     color : var(--light-grayish-blue);
-    word-spacing: .1rem;
+    /* word-spacing: .1rem; */
 }
 
 .intro p:last-child{
     color : var(--light-gray);
-    font-size : .65rem;
+    /* font-size : .65rem; */
 }
 
 .para-1{
     color : var(--white);
-     font-size : 1.05rem; 
+     /* font-size : 1.05rem;  */
 }
 
 .para-2{
     color : var(--light-gray);
-    font-size : .85rem;
-    padding-top: .75rem;
-    padding-bottom : 1rem;
+    /* font-size : .85rem; */
 }
 
 .attribution {    
